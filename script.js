@@ -6,9 +6,9 @@ const divide = (arr, n) => {
 	
 for(let i=0;i<arr.length;i++){
 	let res=arr[i];
-	ans=[]
+	
 		if(res<=n){
-			ans.push(res)
+			ans.push[(res)]	
 		}
 	for(let j=i+1;j<arr.length;j++){
 		res=res+arr[j]
