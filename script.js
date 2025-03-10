@@ -1,31 +1,29 @@
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
-
 const divide = (arr, n) => {
   // Write your code here
-	
+  let ans=[];
 	
 for(let i=0;i<arr.length;i++){
 	let res=arr[i];
-	let ans=[];
+	let result=[];
 		if(res<=n){
-			
-			ans.push([res])
+            result.push(res);
 		
-	for(let j=i+1;j<arr.length;j++){
+	for(var j=i+1;j<arr.length;j++){
 		res=res+arr[j]
 		if(res<=n){
-			
-			ans.push(i(arr[j]))
+			result.push(arr[j]);
+            i=j;
 		}
-		else{
-			break;
-		}
+		        
 			}
+            
+           
 		}
-	i=j;
+        ans.push(result)
+	
 }
 	
-	return ans;
+return ans
 
 };
 
